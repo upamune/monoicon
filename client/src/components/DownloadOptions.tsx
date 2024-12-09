@@ -23,7 +23,7 @@ export default function DownloadOptions({
   size,
   onSizeChange,
 }: DownloadOptionsProps) {
-  const [format, setFormat] = useState<'svg' | 'png'>('svg');
+  const [format, setFormat] = useState<'svg' | 'png'>('png');
 
   const handleDownload = async () => {
     if (format === 'svg') {
