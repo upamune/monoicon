@@ -46,6 +46,9 @@ export default function DownloadOptions({
       const canvas = await html2canvas(iconElement as HTMLElement, {
         width: size,
         height: size,
+        scale: 1,
+        backgroundColor: color,
+        logging: false,
       });
       
       const url = canvas.toDataURL('image/png');
