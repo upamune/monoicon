@@ -1,4 +1,4 @@
-import { AspectRatio } from "./ui/aspect-ratio";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface IconPreviewProps {
   color: string;

@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { Button } from "./ui/button";
-import { Label } from "./ui/label";
-import { Slider } from "./ui/slider";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./ui/select";
+} from "@/components/ui/select";
 import { Download } from "lucide-react";
 import html2canvas from 'html2canvas';
 
