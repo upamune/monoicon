@@ -29,9 +29,9 @@ export default function Home() {
     <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center space-y-2">
-          <h1 className="text-4xl font-bold">Icon Generator</h1>
+          <h1 className="text-4xl font-bold">Square Unicolor Icon Generator</h1>
           <p className="text-muted-foreground">
-            Create simple, beautiful icons in seconds
+            Generate single-color square icons in SVG or PNG format with customizable sizes
           </p>
         </div>
 
