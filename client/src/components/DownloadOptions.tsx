@@ -28,8 +28,8 @@ export default function DownloadOptions({
   const handleDownload = async () => {
     if (format === 'svg') {
       // SVGを生成（正方形を保証、背景透明）
-      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-  <rect x="0" y="0" width="${size}" height="${size}" fill="${color}"/>
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" style="background: transparent;">
+  <rect width="100%" height="100%" fill="${color}"/>
 </svg>`;
       const blob = new Blob([svg], { type: 'image/svg+xml' });
       const url = URL.createObjectURL(blob);
