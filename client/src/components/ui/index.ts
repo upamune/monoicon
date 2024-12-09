@@ -1,3 +1,4 @@
+// UI Components exports
 export * from "./accordion"
 export * from "./aspect-ratio"
 export * from "./button"
@@ -11,3 +12,10 @@ export * from "./toaster"
 export * from "./progress"
 export * from "./skeleton"
 export * from "./switch"
+export * from "./chart"
+export * from "./carousel"
+export * from "./context-menu"
+
+// Re-export toast-related components for easier access
+export { Toaster } from "./toaster"
+export { ToastProvider, ToastViewport } from "./toast"

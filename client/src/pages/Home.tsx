@@ -3,7 +3,7 @@ import { useLocation } from 'wouter';
 import IconPreview from '../components/IconPreview';
 import ColorPicker from '../components/ColorPicker';
 import DownloadOptions from '../components/DownloadOptions';
-import { Card } from '@/components/ui/card';
+import { Card } from '../components/ui/card';
 import { generateRandomColor } from '../lib/colorUtils';
 
 export default function Home() {
