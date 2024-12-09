@@ -40,10 +40,14 @@ export default function DownloadOptions({
       a.click();
       URL.revokeObjectURL(url);
     } else {
-      const iconElement = document.querySelector('[data-icon-preview]');
-      if (!iconElement) return;
+      // Create a temporary div for clean export
+      const tempDiv = document.createElement('div');
+      tempDiv.style.width = `${size}px`;
+      tempDiv.style.height = `${size}px`;
+      tempDiv.style.backgroundColor = color;
+      document.body.appendChild(tempDiv);
       
-      const canvas = await html2canvas(iconElement as HTMLElement, {
+      const canvas = await html2canvas(tempDiv, {
         width: size,
         height: size,
         scale: 1,
@@ -56,6 +60,9 @@ export default function DownloadOptions({
       a.href = url;
       a.download = `icon-${color.replace('#', '')}.png`;
       a.click();
+      
+      // Clean up
+      document.body.removeChild(tempDiv);
     }
   };
 

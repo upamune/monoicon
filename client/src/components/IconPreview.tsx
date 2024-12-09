@@ -10,7 +10,7 @@ export default function IconPreview({ color }: IconPreviewProps) {
       <AspectRatio ratio={1}>
         <div
           data-icon-preview
-          className="w-full h-full rounded-lg shadow-md transition-colors"
+          className="w-full h-full rounded-lg shadow-md transition-colors preview-shadow"
           style={{ backgroundColor: color }}
         />
       </AspectRatio>
