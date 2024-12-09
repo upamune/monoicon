@@ -1,4 +1,4 @@
-// UI Components exports
+// Essential UI Components exports
 export * from "./aspect-ratio"
 export * from "./button"
 export * from "./input"
